@@ -1,0 +1,144 @@
+.navbar {
+  /* background: #f7f7f7;  */
+  padding: 0.3rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  /* font-family: 'Source Sans 3', sans-serif; */
+  font-family: "Quattrocento Sans", sans-serif;
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.306); */
+  box-shadow: 0 1px 10px -6px;
+  height: 9vh;
+}
+
+.titleName {
+  font-size: 1.6rem;
+  line-height: 39px;
+  /* color: #16A500; */
+  font-weight: 600;
+  letter-spacing: 1.3px;
+  cursor: pointer;
+}
+
+.green {
+  color: #16a500;
+}
+
+.links {
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.4rem;
+  font-weight: 600;
+  color: rgba(52, 52, 52, 0.893);
+  height: 100%;
+}
+
+.navLink {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  position: relative;
+  cursor: pointer;
+
+}
+.navLink i {
+  font-size: 0.8rem;
+  transition: all 0.4s ease-out;
+}
+
+.navLink:hover > i {
+  transform: rotate(180deg);
+}
+
+.navLink:hover span,
+.navLink:hover i {
+  color: #16a500;
+}
+
+.linkOpen {
+  width: max-content;
+  min-width: 15vw;
+  height: max-content;
+  padding: 1.5rem;
+  /* border: 1px solid; */
+  position: absolute;
+  top: 120%;
+  background: white;
+  box-shadow: 0px 0px 4px -1px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  opacity: 0;
+  /* display: none; */
+  /* transition-delay: 1s; */
+  transition: all 0.4s ease-out;
+  z-index: -1;
+}
+
+.linkOpen .subLinks {
+  cursor: pointer;
+  width: 100%;
+  font-size: 0.9rem;
+  font-weight: 550;
+}
+.linkOpen .subLinks:hover {
+  color: #16a500;
+}
+
+.navLink:hover .linkOpen {
+  /* display: flex; */
+  opacity: 100%;
+  top: 90%;
+  z-index: 1;
+}
+
+.linkOpen::before {
+  content: " ";
+  position: absolute;
+  bottom: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #838383 transparent transparent transparent;
+  rotate: 180deg;
+}
+
+.body {
+  height: 80vh;
+}
+.needHelp i {
+    font-size: 1.4rem;
+}
+.needHelp {
+    color: #292929;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.mailDetaials {
+    color: #292929 !important;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-weight: 600;
+}
+.mailDetaials span {
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #292929;
+}
+
+.mailDetaials a {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: #292929;
+}
